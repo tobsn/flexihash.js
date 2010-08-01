@@ -1,5 +1,5 @@
 /**
- * A simple consistent hashing implementation with exchangable hash algorithms for node.js
+ * A simple consistent hashing implementation with exchangeable hash algorithm for node.js
  *
  * @author Tobias Orterer <tobsn@php.net> (node.js conversion)
  * @author Paul Annesley (Original Author)
