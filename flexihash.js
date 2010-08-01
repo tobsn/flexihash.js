@@ -230,7 +230,7 @@ flexihash.prototype._sortPositionTargets = function() {
 }
 
 // ----------------------------------------
-// added methods for javascript
+// added methods for node.js
 
 /**
  * Removes duplicate values from array (phpjs.org)
@@ -335,6 +335,9 @@ flexihash.prototype.__crc32 = function( input ) {
 	return ( crc < 0) ? crc += 4294967296 : crc;
 }
 
+/**
+ * Encodes an ISO-8859-1 string to UTF-8 (php.js)
+ */
 flexihash.prototype.__utf8 = function( argString ) {
 	var string = ( argString + '' ); // .replace(/\r\n/g, "\n").replace(/\r/g, "\n");
 	var utftext = '', start, end, stringl = 0;
@@ -365,5 +368,8 @@ flexihash.prototype.__utf8 = function( argString ) {
 	}
 	return utftext;
 }
+
+// ----------------------------------------
+// export the module
 
 module.exports = flexihash;
