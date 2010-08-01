@@ -5,6 +5,7 @@ var flexi = new flexihash();
 // bulk add
 flexi.addTargets( ['cache-1', 'cache-2', 'cache-3'] );
 
+// simple lookup
 flexi.lookup( 'object-a' ); // "cache-1"
 flexi.lookup( 'object-b' ); // "cache-2"
 
